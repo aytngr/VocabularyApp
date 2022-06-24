@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:background="#fec5bb"
+    android:background="#f7ede2"
     tools:context=".ui.MainActivity">
 
 
@@ -15,7 +15,7 @@
         android:layout_height="75dp"
         android:layout_weight="1"
         android:text="Add to vocabulary"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:layout_margin="10dp"
         app:backgroundTint="@null"
         android:background="@drawable/button_drawable"/>
@@ -26,7 +26,7 @@
         android:layout_height="75dp"
         android:layout_weight="1"
         android:text="Check vocabulary"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         app:backgroundTint="@null"
         android:layout_margin="10dp"
         android:background="@drawable/button_drawable"/>/>

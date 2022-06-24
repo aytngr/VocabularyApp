@@ -85,11 +85,6 @@ class VocabularyAdapter(private val mList: ArrayList<WordPair>, private val cont
 //                }
 //            }
 //        }
-
-
-
-
-
     }
 
     override fun getItemCount(): Int {

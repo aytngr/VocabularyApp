@@ -39,7 +39,7 @@ class VocabularyViewModel(application: Application): AndroidViewModel(applicatio
     }
     fun deleteAll(){
         viewModelScope.launch(Dispatchers.IO) {
-            db.clearAllTables()
+            repository.deleteAll()
         }
     }
 

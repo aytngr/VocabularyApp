@@ -9,12 +9,16 @@ import gr.aytn.vocabulary.model.WordPair
 class WordPairRepository(private val userDao: WordPairDao) {
 
     val readAllData: LiveData<List<WordPair>> = userDao.getAll()
+    val count: LiveData<Int> = userDao.count()
 
     fun addWordPair(user: WordPair) {
         userDao.addWordPair(user)
     }
     fun deleteWordPair(user: WordPair) {
         userDao.deleteWordPair(user)
+    }
+    fun deleteAll() {
+        userDao.deleteAll()
     }
 
 }
