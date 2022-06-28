@@ -3,21 +3,17 @@ package gr.aytn.vocabulary.ui
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
+import androidx.lifecycle.ViewModel
+import dagger.hilt.android.lifecycle.HiltViewModel
 import gr.aytn.roomexample.WordPairDatabase
 import gr.aytn.vocabulary.model.WordPair
 import gr.aytn.vocabulary.repository.WordPairRepository
+import javax.inject.Inject
 
-class QuizViewModel(application: Application): AndroidViewModel(application) {
-    val readAllData: LiveData<List<WordPair>>
-    private val repository: WordPairRepository
-    private val db : WordPairDatabase
+@HiltViewModel
+class QuizViewModel @Inject constructor(val repository: WordPairRepository): ViewModel() {
+    val readAllData: LiveData<List<WordPair>> = repository.readAllData
 
-    init {
-        db = WordPairDatabase.getDatabase(application)
-        val wordPairDao = db.wordPairDao()
-        repository = WordPairRepository(wordPairDao)
-        readAllData = repository.readAllData
-    }
     fun getWordPairs(): LiveData<List<WordPair>> {
         return readAllData
     }

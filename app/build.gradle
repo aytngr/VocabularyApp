@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
 }
 
 android {
@@ -69,7 +70,20 @@ dependencies {
     // To use Kotlin annotation processing tool (kapt)
     kapt("androidx.room:room-compiler:$roomVersion")
 
-    //coroutines
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.3")
+    // Coroutines
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.3"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.3"
 
+    // Dagger Hilt
+    implementation 'com.google.dagger:hilt-android:2.42'
+    kapt 'com.google.dagger:hilt-compiler:2.42'
+
+    // DataStore
+    implementation "androidx.datastore:datastore-preferences:1.0.0"
+
+
+
+}
+kapt {
+    correctErrorTypes true
 }

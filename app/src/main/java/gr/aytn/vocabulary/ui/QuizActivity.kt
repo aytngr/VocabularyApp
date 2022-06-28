@@ -5,20 +5,23 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.*
+import androidx.activity.viewModels
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import dagger.hilt.android.AndroidEntryPoint
 import gr.aytn.roomexample.WordPairDatabase
 import gr.aytn.vocabulary.R
 import gr.aytn.vocabulary.adapter.VocabularyAdapter
 import gr.aytn.vocabulary.model.WordPair
 import gr.aytn.vocabulary.repository.WordPairRepository
 
+@AndroidEntryPoint
 class QuizActivity : AppCompatActivity() {
 
     var tvWord: TextView? = null
     var etTranslation: EditText? = null
     var btnSubmit: Button? = null
-    private lateinit var quizViewModel: QuizViewModel
+    private val quizViewModel: QuizViewModel by viewModels()
     private var mCurrentPosition:Int = 0
     private var mWordPairs:List<WordPair>?=null
     private var mCorrectAnswers : Int = 0
@@ -28,7 +31,7 @@ class QuizActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_quiz)
 
-        quizViewModel = ViewModelProvider(this).get(QuizViewModel::class.java)
+
 //        quizViewModel.getWordPairs().observe(this, Observer {
 //            mWordPairs = it
 //            Log.i("Quiz","$mWordPairs")

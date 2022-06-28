@@ -5,20 +5,21 @@ import androidx.lifecycle.LiveData
 import androidx.room.Room
 import gr.aytn.roomexample.WordPairDao
 import gr.aytn.vocabulary.model.WordPair
+import javax.inject.Inject
 
-class WordPairRepository(private val userDao: WordPairDao) {
+class WordPairRepository @Inject constructor(private val wordpairDao: WordPairDao) {
 
-    val readAllData: LiveData<List<WordPair>> = userDao.getAll()
-    val count: LiveData<Int> = userDao.count()
+    val readAllData: LiveData<List<WordPair>> = wordpairDao.getAll()
+    val count: LiveData<Int> = wordpairDao.count()
 
     fun addWordPair(user: WordPair) {
-        userDao.addWordPair(user)
+        wordpairDao.addWordPair(user)
     }
     fun deleteWordPair(user: WordPair) {
-        userDao.deleteWordPair(user)
+        wordpairDao.deleteWordPair(user)
     }
     fun deleteAll() {
-        userDao.deleteAll()
+        wordpairDao.deleteAll()
     }
 
 }
