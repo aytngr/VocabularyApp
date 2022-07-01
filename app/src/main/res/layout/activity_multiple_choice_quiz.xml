@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".ui.QuizActivity"
     android:orientation="vertical"
-    android:background="#f7ede2">
+    android:background="@color/white">
 
     <TextView
         android:layout_width="match_parent"
@@ -26,17 +26,6 @@
         android:gravity="center"
         android:textStyle="bold"
         android:textColor="@color/black"/>
-    <EditText
-        android:id="@+id/quiz_translation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:layout_marginTop="30dp"
-        android:textColor="@color/black"
-        android:inputType="textCapWords"
-        android:gravity="center"
-        android:selectAllOnFocus="true"
-        />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -63,12 +52,72 @@
             android:textSize="14sp"
             tools:text="0/10"/>
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_option_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/option_drawable"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textColor="#7A8089"
+        android:textSize="18sp"
+        tools:text="Apple" />
+
+    <TextView
+        android:id="@+id/tv_option_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/option_drawable"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textColor="#7A8089"
+        android:textSize="18sp"
+        tools:text="Google" />
+
+    <TextView
+        android:id="@+id/tv_option_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/option_drawable"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textColor="#7A8089"
+        android:textSize="18sp"
+        tools:text="Android Inc." />
+
+    <TextView
+        android:id="@+id/tv_option_four"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/option_drawable"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textColor="#7A8089"
+        android:textSize="18sp"
+        tools:text="Nokia" />
+
+
     <Button
         android:id="@+id/submit"
         android:layout_width="170dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:drawableLeft="@drawable/accept"
+        android:layout_marginTop="20dp"
         android:gravity="start|center"
         android:text="   Submit"
         android:textColor="@color/black"

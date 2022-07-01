@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#f7ede2"
+    android:background="@color/white"
     android:orientation="vertical"
     android:layout_gravity="bottom"
     android:gravity="center_horizontal"
@@ -22,8 +22,13 @@
         android:textStyle="bold"
         android:layout_marginBottom="150dp"/>
 
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/star"/>
     <TextView
-        android:id="@+id/tv_congratulations"
+        android:id="@+id/message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -49,7 +54,7 @@
         android:layout_marginTop="10dp"
         android:text="FINISH"
         android:layout_gravity="bottom"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
         app:backgroundTint="@null"

@@ -12,11 +12,11 @@ class WordPairRepository @Inject constructor(private val wordpairDao: WordPairDa
     val readAllData: LiveData<List<WordPair>> = wordpairDao.getAll()
     val count: LiveData<Int> = wordpairDao.count()
 
-    fun addWordPair(user: WordPair) {
-        wordpairDao.addWordPair(user)
+    fun addWordPair(wordpair: WordPair) {
+        wordpairDao.addWordPair(wordpair)
     }
-    fun deleteWordPair(user: WordPair) {
-        wordpairDao.deleteWordPair(user)
+    fun deleteWordPair(wordpair: WordPair) {
+        wordpairDao.deleteWordPair(wordpair)
     }
     fun deleteAll() {
         wordpairDao.deleteAll()

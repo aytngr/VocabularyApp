@@ -31,6 +31,7 @@ object AppModule {
     @Provides
     fun provideRepository(dao: WordPairDao) = WordPairRepository(dao)
 
+
     @Provides
     @Singleton
     fun provideApplicationScope() = CoroutineScope(SupervisorJob())

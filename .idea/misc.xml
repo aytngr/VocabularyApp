@@ -5,10 +5,22 @@
       <map>
         <entry key="..\:/AndroidStudioProjects/Vocabulary/app/src/main/res/drawable/button_drawable.xml" value="0.2465" />
         <entry key="..\:/AndroidStudioProjects/Vocabulary/app/src/main/res/drawable/delete_button.xml" value="0.2595" />
-        <entry key="..\:/AndroidStudioProjects/Vocabulary/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/AndroidStudioProjects/Vocabulary/app/src/main/res/drawable/option_drawable.xml" value="0.2435" />
+        <entry key="..\:/AndroidStudioProjects/Vocabulary/app/src/main/res/drawable/selected_option_border_bg.xml" value="0.2435" />
+        <entry key="..\:/AndroidStudioProjects/Vocabulary/app/src/main/res/layout/activity_cards.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/Vocabulary/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/Vocabulary/app/src/main/res/layout/activity_multiple_choice_quiz.xml" value="0.23854166666666668" />
         <entry key="..\:/AndroidStudioProjects/Vocabulary/app/src/main/res/layout/activity_quiz.xml" value="0.25416666666666665" />
         <entry key="..\:/AndroidStudioProjects/Vocabulary/app/src/main/res/layout/activity_result.xml" value="0.17239583333333333" />
         <entry key="..\:/AndroidStudioProjects/Vocabulary/app/src/main/res/layout/activity_vocabulary.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/Vocabulary/app/src/main/res/layout/card.xml" value="0.253125" />
+        <entry key="..\:/AndroidStudioProjects/Vocabulary/app/src/main/res/layout/card_back.xml" value="0.16354166666666667" />
+        <entry key="..\:/AndroidStudioProjects/Vocabulary/app/src/main/res/layout/card_container.xml" value="0.13418803418803418" />
+        <entry key="..\:/AndroidStudioProjects/Vocabulary/app/src/main/res/layout/card_holder.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/Vocabulary/app/src/main/res/layout/card_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/Vocabulary/app/src/main/res/layout/card_layout_back.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/Vocabulary/app/src/main/res/layout/edf.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudioProjects/Vocabulary/app/src/main/res/layout/flip_out.xml" value="0.253125" />
         <entry key="..\:/AndroidStudioProjects/Vocabulary/app/src/main/res/layout/word.xml" value="0.4" />
         <entry key="..\:/AndroidStudioProjects/Vocabulary/app/src/main/res/menu/context_menu.xml" value="0.25416666666666665" />
       </map>

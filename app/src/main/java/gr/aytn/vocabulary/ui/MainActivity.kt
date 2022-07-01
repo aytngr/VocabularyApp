@@ -24,11 +24,17 @@ class MainActivity : AppCompatActivity() {
 
         val addVocabButton: Button = findViewById(R.id.add_vocab)
         val checkVocabButton: Button = findViewById(R.id.check_vocab)
+        val quizMultipleQuestionsButton: Button = findViewById(R.id.check_vocab2)
+        val cardsButton: Button = findViewById(R.id.card_button)
 
 
 
         addVocabButton.setOnClickListener {
             val intent = Intent(this, VocabularyActivity::class.java)
+            startActivity(intent)
+        }
+        cardsButton.setOnClickListener {
+            val intent = Intent(this, CardsActivity::class.java)
             startActivity(intent)
         }
         checkVocabButton.setOnClickListener {
@@ -42,9 +48,18 @@ class MainActivity : AppCompatActivity() {
                     startActivity(getIntent())
                 }
             })
-
-
-
+        }
+        quizMultipleQuestionsButton.setOnClickListener {
+            mainViewModel.count.observe(this, Observer {
+                if(it >= 5){
+                    val intent = Intent(this, MultipleChoiceQuizActivity::class.java)
+                    startActivity(intent)
+                }else{
+                    Toast.makeText(this,"Your vocabulary is not enough.",Toast.LENGTH_SHORT).show()
+                    finish()
+                    startActivity(getIntent())
+                }
+            })
         }
     }
 }
